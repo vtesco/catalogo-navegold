@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo NaveGold Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #111;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(45deg, #000, #b59d2c);
+            padding: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 32px;
+            color: #fff;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .highlight {
+            color: #b59d2c;
+            font-weight: bold;
+        }
+
+        .slogan {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #b59d2c;
+        }
+
+        .product {
+            background: #1e1e1e;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            width: calc(33% - 40px);
+            display: inline-block;
+            box-shadow: 0 0 15px rgba(255, 189, 0, 0.5);
+            transition: transform 0.3s ease;
+            text-align: center;
+            display: none; /* Hidden initially */
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .price {
+            font-size: 22px;
+            color: #b59d2c;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #b59d2c;
+            color: #000;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .testimonial {
+            background: #222;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px auto;
+            max-width: 600px;
+            font-style: italic;
+        }
+
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: #fff;
+            padding: 15px 20px;
+            font-size: 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .category-filter {
+            margin: 20px 0;
+        }
+
+        .category-filter button {
+            background: #b59d2c;
+            color: #000;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .category-filter button.active {
+            background: #fff;
+            color: #b59d2c;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Catálogo Oficial - NaveGold Shop</h1>
+    </header>
+
+    <div class="container">
+        <!-- Slogan de Abertura -->
+        <p class="slogan">💎 Exclusividade, Poder e Luxo em Cada Detalhe 💎</p>
+        <p class="highlight">Joias Premium com Acabamento Idêntico ao Ouro 18k</p>
+        
+        <!-- Filtro de Categorias -->
+        <div class="category-filter">
+            <button class="active" data-category="all">Todos</button>
+            <button data-category="correntes">Correntes</button>
+            <button data-category="pingentes">Pingentes</button>
+            <button data-category="aneis">Anéis</button>
+            <button data-category="relogios">Relógios</button>
+            <button data-category="pulseiras">Pulseiras</button>
+            <button data-category="escapularios">Escapulários</button>
+        </div>
+
+        <!-- Produtos em Grade -->
+        <div class="grid">
+            <!-- Categoria: Correntes -->
+            <div class="product correntes">
+                <img src="produto1.jpg" alt="Produto 1">
+                <h2>Corrente Luxo 2mm</h2>
+                <p>Acabamento imbatível, sensação de poder.</p>
+                <p class="price">R$ 149,90</p>
+                <a href="https://wa.me/SEUNUMERO" class="cta-button">💬 Comprar no WhatsApp</a>
+            </div>
+
+            <div class="product correntes">
+                <img src="produto2.jpg" alt="Produto 2">
+                <h2>Corrente Luxo 3mm</h2>
+                <p>Força e presença a cada detalhe.</p>
+                <p class="price">R$ 179,90</p>
+                <a href="https://wa.me/SEUNUMERO" class="cta-button">💬 Comprar no WhatsApp</a>
+            </div>
+
+            <div class="product correntes">
+                <img src="produto3.jpg" alt="Produto 3">
+                <h2>Corrente Master 4mm</h2>
+                <p>Elegância e durabilidade com design exclusivo.</p>
+                <p class="price">R$ 199,90</p>
+                <a href="https://wa.me/SEUNUMERO" class="cta-button">💬 Comprar no WhatsApp</a>
+            </div>
+
+            <!-- Categoria: Pingentes -->
+            <div class="product pingentes">
+                <img src="produto4.jpg" alt="Produto 4">
+                <h2>Pingente Cruz</h2>
+                <p>Um símbolo de fé e elegância.</p>
+                <p class="price">R$ 94,90</p>
+                <a href="https://wa.me/SEUNUMERO" class="cta-button">💬 Comprar no WhatsApp</a>
+            </div>
+
+            <div class="product pingentes">
+                <img src="produto5.jpg" alt="Produto 5">
+                <h2>Pingente Coração</h2>
+                <p>Design romântico e refinado.</p>
+                <p class="price">R$ 119,90</p>
+                <a href="https://wa.me/SEUNUMERO" class="cta-button">💬 Comprar no WhatsApp</a>
+            </div>
+
+            <div class="product pingentes">
+                <img src="produto6.jpg" alt="Produto 6">
+                <h2>Pingente Estrela</h2>
+                <p>Brilho único para momentos especiais.</p>
+                <p class="price">R$ 129,90</p>
+                <a href="https://wa.me/SEUNUMERO" class="cta-button">💬 Comprar no WhatsApp</a>
+            </div>
+
+            <!-- Categoria: Anéis -->
+            <div class="product aneis">
+                <img src="produto7.jpg" alt="Produto 7">
+                <h2>Anel Imperador</h2>
+                <p>Design imponente e luxuoso.</p>
+                <p class="price">R$ 174,90</p>
+                <a href="https://wa.me/SEUNUMERO" class="cta-button">💬 Comprar no WhatsApp</a>
+            </div>
+
+            <div class="product aneis">
+                <img src="produto8.jpg" alt="Produto 8">
+                <h2>Anel Ouro</h2>
+                <p>Brilho eterno e durabilidade incomparável.</p>
+                <p class="price">R$ 199,90</p>
+                <a href="https://wa.me/SEUNUMERO" class="cta-button">💬 Comprar no WhatsApp</a>
+            </div>
+
+            <div class="product aneis">
+                <img src="produto9.jpg" alt="Produto 9">
+                <h2>Anel Master</h2>
+                <p>Um design clássico para o homem moderno.</p>
+                <p class="price">R$ 159,90</p>
+                <a href="https://wa.me/SEUNUMERO" class="cta-button">💬 Comprar no WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- Depoimentos -->
+        <h2>✨ Depoimentos de Clientes ✨</h2>
+        <div class="testimonial">
+            <p>"A qualidade dessas joias é impecável! Já comprei duas correntes e estou apaixonado!" – Carlos M.</p>
+        </div>
+        <div class="testimonial">
+            <p>"Entrega rápida e atendimento incrível. Recomendo demais!" – Juliana R.</p>
+        </div>
+
+        <!-- CTA -->
+        <a href="https://wa.me/SEUNUMERO" class="whatsapp-button">💬 Fale Conosco</a>
+    </div>
+
+    <script>
+        const filterButtons = document.querySelectorAll('.category-filter button');
+        const productCategories = document.querySelectorAll('.product');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove a classe 'active' de todos os botões
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                productCategories.forEach(category => category.style.display = 'none');
+
+                // Adiciona a classe 'active' ao botão clicado
+                button.classList.add('active');
+                const category = button.getAttribute('data-category');
+
+                // Mostra os produtos da categoria clicada
+                if (category === 'all') {
+                    productCategories.forEach(category => category.style.display = 'inline-block');
+                } else {
+                    const categoryProducts = document.querySelectorAll(`.${category}`);
+                    categoryProducts.forEach(product => product.style.display = 'inline-block');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
